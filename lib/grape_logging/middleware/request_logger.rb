@@ -25,7 +25,7 @@ module GrapeLogging
       end
 
       def before
-	return if env['grape_logging.disable']
+        return if env['grape_logging.disable']
 
         reset_db_runtime
         start_time
